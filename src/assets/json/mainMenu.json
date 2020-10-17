@@ -1,0 +1,45 @@
+[      
+    {
+        "title": "Perfil",
+        "icon": "fa-user",
+        "color": "text-gray-400"
+
+
+
+    },
+    {
+        "title": "Configuraciones",
+        "icon": "fa-cogs",
+        "color": "text-gray-400"
+
+
+
+    },
+    {
+        "title": "Regitro de actividad",
+        "icon": "fa-list",
+        "color": "text-gray-400"
+
+
+
+    },
+    {
+        "title": "Cerrar sesion",
+        "icon": "fa-sign-out-alt",
+        "color": "text-gray-400"
+
+
+
+    },
+    {
+        "title": "item 7",
+        "icon": "fa-sign-out-alt",
+        "color": "text-gray-400"
+
+
+
+    }
+
+
+
+]
