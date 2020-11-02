@@ -1,0 +1,30 @@
+[
+    {
+        "section": "",
+        "title": "Dashboard",
+        "icon": "fa-tachometer-alt",
+        "items": []
+    },
+    {
+        "section": "Interface",
+        "title": "Components",
+        "icon": "fa-cog",
+        "items": [
+            {
+                "subTitle": "Facturas",
+                "subItems": [
+                    {
+                        "title": "Buttons",
+                        "icon": "",
+                        "route": ""
+                    },
+                    {
+                        "title": "Cards",
+                        "icon": "",
+                        "route": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

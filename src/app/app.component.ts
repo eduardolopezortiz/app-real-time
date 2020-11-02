@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { combineLatest } from 'rxjs';
 import { MainTopBarMenuService } from './services/core/main-top-bar-menu.service';
+import { SidebarService } from './services/core/sidebar.service';
 
+//Jquery variables
 declare var App: any;//mandamos llmar  la variable App de la funcion  del archivo js 
 @Component({
   selector: 'app-root',
@@ -11,16 +13,17 @@ declare var App: any;//mandamos llmar  la variable App de la funcion  del archiv
 export class AppComponent implements OnInit {
 
 
-  constructor(private menuSvc: MainTopBarMenuService) {
+  constructor(private menuSvc: MainTopBarMenuService, private SidebarService: SidebarService) {
 
 
   }
 
   title = 'app-real-time2';
-  miempresa: string = 'DeLaSalleBajio';//aqui se declaran variables con el nombre y año que apareceran en el footer
+  miempresa: string = 'DeLaSalle Bajio';//aqui se declaran variables con el nombre y año que apareceran en el footer
   periodo: number = 2020;
 
   menuItems: any[] = [];
+  sideBarItems: any[]= [];
 
 
 
@@ -36,7 +39,9 @@ export class AppComponent implements OnInit {
     this.menuSvc.getItemsMenu().subscribe((data: any) =>{
       this.menuItems = data;
     });
-    
+    this.SidebarService.getItemSideBar().subscribe((data: any) =>{
+      this.sideBarItems = data;
+    });
 
   }
    listenChildMenuEvent (eventArgs: any){
@@ -52,3 +57,4 @@ export class AppComponent implements OnInit {
 }
 
   
+   

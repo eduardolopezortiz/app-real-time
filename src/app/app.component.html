@@ -2,7 +2,9 @@
 <div id="wrapper">
     <!-------->
     <!---- Sidebar -->
-    <navigation-sidebar></navigation-sidebar>
+    <navigation-sidebar
+    titleMenu="jjjjj"
+    [menuItems]="sideBarItems"></navigation-sidebar>
     <!--esto manda llmmar al segmento de codigo q tenemos en el componente--->
     <!---- /sidebar -->
 
@@ -22,12 +24,12 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
+               <router-outlet></router-outlet>
+               
+                
 
-                <!-- se muestra el la info de la API -->
-                <pre>
-                {{menuItems | json}}
-
-            </pre>
+                <!-- se muestra la info de la API -->
+              
             </div>
             <!-- /begin page content -->
 
@@ -35,7 +37,7 @@
         <!-- main content -->
 
         <!-- Footer -->
-        <naavigation-footer [empresa]="miempresa" [anio]="periodo">>
+        <naavigation-footer [empresa]="miempresa" [anio]="periodo">
 
 
         </naavigation-footer>
